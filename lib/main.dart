@@ -76,24 +76,22 @@ class HomePageState extends State<HomePage> {
         children: <Widget>[
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  'No Of Times Lost = $noOfTimesLost',
-                  style: const TextStyle(
-                      fontWeight: FontWeight.w500,
-                      fontSize: 18.0,
-                      color: Colors.black),
-                ),
-                Text(
-                  'No Of Times Won = $noOfTimesWon',
-                  style: const TextStyle(
-                      fontWeight: FontWeight.w500,
-                      fontSize: 18.0,
-                      color: Colors.black),
-                ),
-              ],
+            child: Text(
+              'No Of Times Lost = $noOfTimesLost',
+              style: const TextStyle(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 18.0,
+                  color: Colors.black),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              'No Of Times Won = $noOfTimesWon',
+              style: const TextStyle(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 18.0,
+                  color: Colors.black),
             ),
           ),
           Padding(
@@ -108,7 +106,7 @@ class HomePageState extends State<HomePage> {
                     padding: EdgeInsets.all(10.0),
                     child: Center(
                       child: Text(
-                        'I\'m thinking of a number between 1 and 20. You only have  tries.',
+                        'I\'m thinking of a number between 1 and 20. You only have 5 tries.',
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 18.0,
